@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Electron Sakila</title>
+    <style>
+      body{
+      background: url(./imagenes/back.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      }
+      *{
+        font-family: Arial;
+      }
+      #titulo-principal{
+        text-align: center;
+        font-weight: 400;
+      }
+      #form-filtrar{
+        margin-top: 30px;
+        padding: 0 20px;
+      }
+      #txt-busqueda{
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+        border: 0;
+        border-bottom: 1px solid #c4c4c4
+      }
+      #txt-busqueda:focus{
+        outline: none;
+      }
+      #resultados h3{
+        font-size: 18px;
+        background-color: coral;
+        font-family: cursive;
+        color:darkred
+      }
+      #resultados h4{
+        background-color: lemonchiffon;
+        font-size: 14px;
+        font-family:cursive;
+        color:lawngreen;
+      }
+      h1{
+        color: darkred;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="titulo-principal">Busqueda en Sakila</h1>
+    
+    <form id="form-filtrar">
+        <input type="text" placeholder="Ingrese su busqueda" id="txt-busqueda">
+    </form>
+    <div id="resultados"></div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
